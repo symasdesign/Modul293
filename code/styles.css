@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto Mono";
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    padding: 2%;
+    background-color: #B1A296;
+}
+
+img {
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    margin-right: 20px;
+    width: 96%;
+}
+
+.navbar_links {
+    background-color: #7395AE;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 0;
+    border-radius: 20px;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar_links > li {
+    float: right;
+    padding: 15px 2%;
+    background-color: #7395AE;
+}
+
+.navbar_links > li > a {
+    transition: all 0.3s ease 0s;
+    display: flex;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    background-color: #7395AE;
+}
+
+.navbar_links > li > a:hover {
+    color: white;
+}
+
+.TitelName {
+    margin-top: 50px;
+}
+
+.TitelScreen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+    height: 450px;
+    background-color: #557A95;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+} 
+
+#AndrewTatePlaceholder {
+    margin-right: 20px;
+    margin-top: 50px;
+    width: 310px;
+}
+
+h1, h2 {
+    font-size: 4.5em;
+    color: black;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 0.9em;
+    color: black;
+}
+
+.Rest {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    background-color: #B3B3B3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.TitelRest {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: black;
+    background-color: #B3B3B3;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navDiv {
+    width: 100%;
+    height: calc(5em + 30px);
+}
+
+.ueberMichContainer {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.ueberMichElement {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #557A95;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.ueberMichElement > p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ueberMichElement > img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.FaehigkeitenContainer {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.FaehigkeitenElement {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #557A95;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.FaehigkeitenElement > img {
+    margin-top: 15px;
+}
+
+.PortfolioContainer {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.PortfolioElement {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #557A95;
+    border-radius: 10px;
+    margin: 10px
+}
+
+span, label {
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+
+label {
+    background-color: #557A95;
+    padding: 2%;
+    border-radius: 10%;
+    appearance: auto;
+    text-rendering: auto;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+input:checked + #PortfolioSpan1::after { 
+    content: ": Beschreiben Sie, was für Aufgaben Sie in Ihrem Lehrbetrieb ausführen. Überlegen Sie, ob Sie bereits Aufträge ausgeführt haben. "; 
+}
+
+input:checked + #PortfolioSpan2::after { 
+    content: ": Recherchieren Si eim Internet den Unterschied von Aufbau- und Ablauforganisationen. Zeigen Sie je ein Beispiel aus Ihrem Lehrbetrieb. "; 
+}
+
+input:checked + #PortfolioSpan3::after { 
+    content: ": Suchen Sie einen Prozess, bei dem Sie Optimierungspotential erkennen. Überlegen Sie sich, wie dieser Prozess effizienter durchgeführt werden könnte. "; 
+}
+
+input:checked + #PortfolioSpan4::after { 
+    content: ": Überlegen Sie sich 5 Aufträge, die Sie in Ihrem Lehrbetrieb ausgeführt haben. Beschreiben Sie diese Aufträge detailliert. "; 
+}
+
+input:checked + #PortfolioSpan5::after { 
+    content: ": Strukturieren Sie Ihre Aktivität zur Erstellung des E-Portfolios und erstellen Sie dazu ein Gantt-Diagramm. Beschreiben Sie, wie Ihnen die Aufgabe geglückt ist. "; 
+}
+
+input:checked + #PortfolioSpan6::after { 
+    content: ": Überlegen Sie sich 3 verschiedene Rollen in einem Projekt und beschreiben Sie diese. Ergänzen Sie diese mit einer Tabelle mit den Aufgaben, Kompetenzen und Verantwortungen. "; 
+}
+
+#checkbox1 {
+    visibility: hidden;
+}
+
+#checkbox2 {
+    visibility: hidden;
+}
+
+#checkbox3 {
+    visibility: hidden;
+}
+
+#checkbox4 {
+    visibility: hidden;
+}
+
+#checkbox5 {
+    visibility: hidden;
+}
+
+#checkbox6 {
+    visibility: hidden;
+}
+
+
+.KontaktFormular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    padding: 1rem;
+    width: 20rem;
+    background: transparent;
+    border: 1px solid;
+    resize: none;
+    font-size: 0.9em;
+    color: black;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 14rem;
+}
+
+button, label {
+    transition: all 0.3s ease;
+    width: 8rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: black;
+    font-size: 0.73em;
+    border-radius: 5px;
+    background-color: #B1A296;
+    border-color: #B3B3B3;
+    margin-bottom: 5%;
+}
+
+button:hover, label:hover {
+    background: #B3B3B3;
+    border-color: #B1A296;
+}
+
+.KontaktFormularAttribute {
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 2.5em;
+    padding: 3%;
+}
+
+@media screen and (max-width:1100px) {
+    .TitelName {
+        font-size: 3em;
+    }
+
+    .TitelJob {
+        font-size: 2em;
+    }
+
+    .TitelRest {
+        font-size: 2.5em;
+    }
+
+    .navDiv {
+        height: calc(3.5em + 30px);
+    }
+
+    .ueberMichElement > img {
+        width: 300px;
+    }
+
+    .ueberMichContainer {
+        height: 975px;
+    }
+
+    .FaehigkeitenContainer {
+        height: 1150px;
+    }
+
+    .ueberMichElement {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .FaehigkeitenElement {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .FaehigkeitenElement > img {
+        width: 300px;
+    }
+
+    .PortfolioContainer {
+        height: 1200px;
+    }
+    
+    .PortfolioElement {
+        width: 40%;
+    }
+
+    #PortfolioSpan1 {
+        font-size: 1.3em;
+    }
+
+    #PortfolioSpan2 {
+        font-size: 1.3em;
+    }
+
+    #PortfolioSpan3 {
+        font-size: 1.3em;
+    }
+
+    #PortfolioSpan4 {
+        font-size: 1.3em;
+    }
+
+    #PortfolioSpan5 {
+        font-size: 1.3em;
+    }
+
+    #PortfolioSpan6 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .navbar_links {
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .navbar_links > li > a {
+        font-size: 1em;
+    }
+
+    .TitelScreen {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .navDiv {
+        height: calc(2.5em + 30px);
+    }
+
+    .PortfolioContainer {
+        height: 2300px;
+    }
+    
+    .PortfolioElement {
+        width: 90%;
+    }
+
+    #PortfolioSpan1 {
+        font-size: 1em;
+    }
+
+    #PortfolioSpan2 {
+        font-size: 1em;
+    }
+
+    #PortfolioSpan3 {
+        font-size: 1em;
+    }
+
+    #PortfolioSpan4 {
+        font-size: 1em;
+    }
+
+    #PortfolioSpan5 {
+        font-size: 1em;
+    }
+
+    #PortfolioSpan6 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:450px){
+    .navbar_links > li > a {
+        font-size: 0.7em;
+    }
+
+    .TitelScreen {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .TitelRest {
+        font-size: 2em;
+    }
+
+    .ueberMichElement > img {
+        width: 90%;
+    }
+    
+    .FaehigkeitenElement > img {
+        width: 90%;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    #AndrewTatePlaceholder {
+        margin-left: 5%;
+    }
+
+    .navDiv {
+        height: calc(1.5em + 30px);
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+
+    #PortfolioSpan1 {
+        font-size: 0.8em;
+    }
+
+    #PortfolioSpan2 {
+        font-size: 0.8em;
+    }
+
+    #PortfolioSpan3 {
+        font-size: 0.8em;
+    }
+
+    #PortfolioSpan4 {
+        font-size: 0.8em;
+    }
+
+    #PortfolioSpan5 {
+        font-size: 0.8em;
+    }
+
+    #PortfolioSpan6 {
+        font-size: 0.8em;
+    }
+
+    input, textarea {
+        width: 80%;
+    }
+}
