@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio Amaru Eugster</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <header>    
+        <nav>
+            <ul class="navbar_links">
+                <li><a href="#KontaktNav">Kontakt</a></li>
+                <li><a href="#PortfolioNav">Portfolio</a></li>
+                <li><a href="#FaehigkeitenNav">Fähigkeiten</a></li>
+                <li><a href="#UeberMichNav">Über mich</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="TitelScreen">
+        <div>
+            <img id="AndrewTatePlaceholder" src="sources/images/aiportrait.jpg" loading="eager">
+        </div>
+        <div>
+            <h1 class="TitelName">Amaru Eugster</h1>
+            <h2 class="TitelJob">Applikationsentwickler</h2>
+        </div>
+    </div>
+    <div class="Rest">
+        <div id="UeberMichNav" class="navDiv"></div>
+        <h2 id="UeberMich" class="TitelRest">Über Mich</h2>
+            <div class="ueberMichContainer">
+                <div class="ueberMichElement">
+                    <img id="AbacusImage" src="sources/images/AbacusImage.jpg" loading="lazy">
+                    <p>Ich bin bei der Abacus Research<br>AG in Wittenbach tätig. Ich bin<br>Lernender Informatiker im Bereich<br>Applikationsentwicklung.</p>
+                </div>
+                <div class="ueberMichElement">
+                    <img id="AndrewTateLong" src="sources/images/setup.jpg" loading="lazy">
+                    <p>Ich spiele gerne Videospiele<br>wie z. B.Assetto Corsa.</p>
+                </div>
+                <div class="ueberMichElement">
+                    <img id="updateGossau" src="sources/images/updateGossau.jpg" loading="lazy">
+                    <p>Ich gehe gerne ins Fitnessstudio.</p>
+                </div>
+            </div>
+
+        <div id="FaehigkeitenNav" class="navDiv"></div>
+        <h2 id="Faehigkeiten" class="TitelRest">Fähigkeiten</h2>
+        <div class="FaehigkeitenContainer">
+            <div class="FaehigkeitenElement">
+                <img src="sources/images/JavaImg.jpg" loading="lazy">
+                <p>In der Abacus Research AG lerne<br>ich zurzeit die<br>Programmiersprache Java.</p>
+                <button onclick="window.open('https://www.w3schools.com/java/')">Mehr erfahren</button>
+            </div>
+            <div class="FaehigkeitenElement">
+                <img src="sources/images/CProgramming.jpg" loading="lazy">              
+                <p>Im 1. Semester der Schule habe<br>ich C als Programmiersprache<br>gelernt.</p>
+                <button onclick="window.open('https://www.w3schools.com/c/')">Mehr erfahren</button>
+            </div>
+            <div class="FaehigkeitenElement">
+                <img src="sources/images/SQLImg.jpg" loading="lazy">
+                <p>Im 2. Semxester der Schule lerne<br>ich die Programmiersprache für<br>Datenbanken, nämlich SQL</p>
+                <button onclick="window.open('https://www.w3schools.com/sql/')">Mehr erfahren</button>
+            </div>
+        </div>
+
+        <div id="PortfolioNav" class="navDiv"></div>
+        <h2 id="Portfolio" class="TitelRest">Portfolio</h2>
+        <div class="PortfolioContainer">
+            <div class="PortfolioElement">
+                <input type="checkbox" id="checkbox1"/>
+                <span id="PortfolioSpan1">Aufgaben und Aufträge im Lehrbetrieb</span>
+                <label id="PortfolioLabel1" for="checkbox1">Mehr anzeigen</label>
+            </div>
+            <div class="PortfolioElement">
+                <input type="checkbox" id="checkbox2"/>
+                <span id="PortfolioSpan2">Beziehungen zwischen Aufbau- und Ablauforganisationen</span>
+                <label id="PortfolioLabel2" for="checkbox2">Mehr anzeigen</label>
+            </div>
+            <div class="PortfolioElement">
+                <input type="checkbox" id="checkbox3"/>
+                <span id="PortfolioSpan3">Projektantrag</span>
+                <label id="PortfolioLabel3" for="checkbox3">Mehr anzeigen</label>
+            </div>            
+            <div class="PortfolioElement">
+                <input type="checkbox" id="checkbox4"/>
+                <span id="PortfolioSpan4">Phasenablauf IT-Projekt</span>
+                <label id="PortfolioLabel4" for="checkbox4">Mehr anzeigen</label>
+            </div>
+            <div class="PortfolioElement">
+                <input type="checkbox" id="checkbox5"/>
+                <span id="PortfolioSpan5">Gantt-Diagramm E-Portfolio</span>
+                <label id="PortfolioLabel5" for="checkbox5">Mehr anzeigen</label>
+            </div>
+            <div class="PortfolioElement">
+                <input type="checkbox" id="checkbox6"/>
+                <span id="PortfolioSpan6">Projektrollen und deren Aufgabe, Kompetenzen und Verantwortlichkeiten</span>
+                <label id="PortfolioLabel6" for="checkbox6">Mehr anzeigen</label>
+            </div>
+        </div>
+
+        <div id="KontaktNav" class="navDiv"></div>
+        <h2 id="Kontakt" class="TitelRest">Kontakt</h2>
+            <form class="KontaktFormular" action="https://formsubmit.co/amaru.eugster@edu.gbssg.ch" method="POST">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                <textarea id="message" name="message" placeholder="Nachricht" required></textarea>
+                <button type="submit">Senden</button>
+             </form>
+    </div>
+    <footer>
+        <p>Amaru Eugster</p>
+    </footer>
+</body>
+</html>
